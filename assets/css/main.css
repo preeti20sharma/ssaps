@@ -12379,8 +12379,9 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .logo-img img {
-  width: 95px;
+  width: 130px;
   height: auto;
+  padding: 5px;
 }
 
 .hero-bg {
