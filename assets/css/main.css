@@ -13521,6 +13521,51 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
+/* Gallery Section */
+.ue-gallery {
+  background: #f8fafc;
+}
+
+/* Heading */
+.ue-gallery-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ue-gallery-subtitle {
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* Gallery Card */
+.ue-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
+.ue-gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover Effect */
+.ue-gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .ue-gallery-item img {
+    height: 200px;
+  }
+}
+
+
 /* 
 .tes-img img {
   height: 400px;
