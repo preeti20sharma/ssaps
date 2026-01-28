@@ -1209,6 +1209,98 @@
             </main>
             <!-- main area end  -->
 
+            <div class="modal fade" id="virtualTourModal" tabindex="-1"
+                role="dialog" aria-labelledby="virtualTourModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"
+                    role="document">
+                    <div class="modal-content ue-modal-content">
+
+                        <div class="modal-body">
+                            <div class="ue-form-card">
+
+                                <!-- Header -->
+                                <div class="ue-form-head">
+                                    <h2 class="ue-form-title">SSAPS,
+                                        Karaunda-Masina, Siddharth
+                                        Nagar</h2>
+                                    <button type="button"
+                                        class="ue-close-btn"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close">✕</button>
+                                </div>
+
+                                <!-- Form -->
+                                <form class="ue-form">
+                                    <div class="ue-grid">
+
+                                        <div class="ue-col-12">
+                                            <input type="text"
+                                                class="ue-input"
+                                                placeholder="Enter Your Full Name*"
+                                                required>
+                                        </div>
+
+                                        <div class="ue-col-12">
+                                            <input type="email"
+                                                class="ue-input"
+                                                placeholder="Enter Your Email ID*"
+                                                required>
+                                        </div>
+
+                                        <div class="ue-col-12">
+                                            <input type="tel"
+                                                class="ue-input"
+                                                placeholder="Enter Mobile No.*"
+                                                required>
+                                        </div>
+                                        <div class="ue-col-12">
+                                            <input type="text"
+                                                class="ue-input"
+                                                placeholder="Enter Your City*"
+                                                required>
+                                        </div>
+
+                                        <div class="ue-col-12">
+                                            <select class="ue-select"
+                                                required>
+                                                <option selected
+                                                    disabled>Select
+                                                    Programme</option>
+                                                <option>MBA</option>
+                                                <option>BBA</option>
+                                                <option>MCA</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="ue-col-12 ue-check">
+                                            <label class="ue-check-label">
+                                                <input type="checkbox"
+                                                    required>
+                                                I authorise the
+                                                representative to contact me
+                                                via phone or email.
+                                            </label>
+                                        </div>
+
+                                        <div
+                                            class="ue-col-12 ue-submit-wrap">
+                                            <button type="submit"
+                                                class="ue-btn ue-btn-submit">
+                                                Submit Now
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <!-- footer strt -->
             <footer class="footer clg-footer  pos-rel">
                 <div class="container">
@@ -1303,7 +1395,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tbody = table.querySelector(".table-toggle-body");
 
         toggleIcon.addEventListener("click", function (e) {
-            e.stopPropagation(); // 🔥 important
+            e.stopPropagation(); //  important
 
             if (tbody.style.display === "table-row-group") {
                 tbody.style.display = "none";
@@ -1316,6 +1408,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+</script>
+        <script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      const modalEl = document.getElementById("virtualTourModal");
+      const modal = new bootstrap.Modal(modalEl);
+      modal.show();
+    }, 3000);
+  });
 </script>
 
     </body>
