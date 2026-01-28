@@ -12878,7 +12878,6 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 .uni-breadcrumb-area {
   width: 100%;
   min-height: 480px;
-  background: url("/assets/img/bg/about-banner.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
