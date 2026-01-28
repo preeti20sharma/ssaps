@@ -10,7 +10,7 @@
 	= preloader
 	-------------------------------------------*/
 	function preloader() {
-		$('#preloader').fadeOut('slow',function(){
+		$('#preloader').fadeOut('slow', function () {
 			$(this).remove();
 		});
 	}
@@ -24,7 +24,7 @@
 		} else {
 			$('.xb-backtotop').removeClass('active');
 		}
-	});  
+	});
 	$(function () {
 		$(".scroll").on('click', function () {
 			$("html,body").animate({ scrollTop: 0 }, "slow");
@@ -33,7 +33,7 @@
 	});
 
 	$(window).scroll(function () {
-		if ($ (this).scrollTop() > 500){
+		if ($(this).scrollTop() > 500) {
 			$('.xb-backtotop').addClass('active');
 		}
 		else {
@@ -82,7 +82,7 @@
 	stickyHeader();
 
 
-//=======================
+	//=======================
 	// header search
 	$(".header-search-btn").on("click", function (e) {
 		e.preventDefault();
@@ -276,7 +276,7 @@
 		},
 	});
 
-	
+
 	/*------------------------------------------
 	= program-slider
 	-------------------------------------------*/
@@ -472,7 +472,7 @@
 		$(".xb-mouseenter").removeClass("active");
 		$(this).addClass("active");
 	});
-	$(".xb-mouseenter2").on('mouseenter', function () { 
+	$(".xb-mouseenter2").on('mouseenter', function () {
 		$(".xb-mouseenter2").removeClass("active");
 		$(this).addClass("active");
 	});
@@ -514,27 +514,27 @@
 		});
 	}
 
-  	/*------------------------------------------
-	= Blog Carousel
-	-------------------------------------------*/
-  var blogOneColCarousel = new Swiper(".blog_onecol_carousel", {
-    loop: true,
-    speed: 1000,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".b1cc-swiper-button-next",
-      prevEl: ".b1cc-swiper-button-prev",
-    },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: true,
-    },
-    pagination: {
-      el: ".b1cc-swiper-pagination",
-      clickable: true,
-    },
-  });
+	/*------------------------------------------
+= Blog Carousel
+-------------------------------------------*/
+	var blogOneColCarousel = new Swiper(".blog_onecol_carousel", {
+		loop: true,
+		speed: 1000,
+		slidesPerView: 1,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".b1cc-swiper-button-next",
+			prevEl: ".b1cc-swiper-button-prev",
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: true,
+		},
+		pagination: {
+			el: ".b1cc-swiper-pagination",
+			clickable: true,
+		},
+	});
 
 	/*------------------------------------------
 	= isotop
@@ -562,6 +562,7 @@
 		$(this).addClass('active');
 		event.preventDefault();
 	});
+
 
 	//  Countdown
 	$('[data-countdown]').each(function () {
