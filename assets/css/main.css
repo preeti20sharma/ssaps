@@ -13303,7 +13303,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.01));
   display: flex;
   align-items: flex-end;
@@ -13401,7 +13401,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .admission-img {
   display: flex;
-  margin-top: 90px;
+  /* margin-top: 90px; */
   justify-content: center;
   align-items: center;
   border-radius: 18px;
@@ -13578,7 +13578,6 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .ue-gallery-item img {
   width: 100%;
-  height: 240px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -13595,6 +13594,26 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
+.img-gradient-wrap {
+  position: relative;
+}
+
+/* TRUE bottom → top overlay */
+.img-gradient-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.4) 35%,
+      rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+.img-gradient-wrap img {
+  display: block;
+  width: 100%;
+}
 
 /* 
 .tes-img img {
